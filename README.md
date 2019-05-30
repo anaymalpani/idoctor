@@ -1,5 +1,5 @@
-# Sytora
-Sytora is a multilingual symptom-disease classification app. Translation is managed through the UMLS coding standard. A multinomial Naive Bayes classifier is trained on a handpicked dataset, which is freely available under CC4.0. 
+# iDoctor
+iDoctor is a multilingual symptom-disease classification app. Translation is managed through the UMLS coding standard. A multinomial Naive Bayes classifier is trained on a handpicked dataset, which is freely available under CC4.0. 
 
 To get started:
 - Clone this repo
@@ -11,7 +11,7 @@ To get started:
 
 ![search](https://raw.githubusercontent.com/leanderme/sytora/master/screenshots/search.png)
 
-Check out [sytora.com](sytora.com) for a demo.
+Check out [alacritic.com](alacritic.com) for a demo.
 
 
 ### Motivation
@@ -58,7 +58,7 @@ pip install Flask-Limiter flask-expects-json
 pip install more-itertools requests configparser
 sudo apt-get install nginx supervisor
 
-git clone https://github.com/leanderme/sytora
+git clone https://github.com/anaymalpani/idoctor
 cd sytora/flaskapp && npm i
 
 vi /etc/supervisor/conf.d/sytora.conf
