@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node_modules/.bin/webpack --watch",
-    "build": "node_modules/.bin/webpack --config webpack.config.js --progress -p"
+    "build": "node_modules/.bin/webpack --config webpack.config.js --progress -p",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -50,7 +52,8 @@
     "react-virtualized-select": "^3.1.0",
     "recompose": "latest",
     "typeface-roboto": "0.0.43",
-    "url-search-params": "^1.1.0"
+    "url-search-params": "^1.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -62,5 +65,6 @@
     "style-loader": "^0.17.0",
     "webpack": "^2.5.1",
     "webpack-cli": "^2.0.10"
-  }
+  },
+  "snyk": true
 }
